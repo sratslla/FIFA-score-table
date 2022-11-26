@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:#000;
+    overflow:hidden;
+}
+.main{
+    background-image: linear-gradient(to bottom right, #4384af, #7d620a, hsl(23, 33%, 19%));
+    height: 100vh;
+    width: 100vw;
+}
+.top{
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
+.center{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:prespective(10px) translate(-50%,-50%);
+    transform:skewY(15deg);
+    transition:0.5s;
+}
+
+.center:hover{
+    transform:prespective(10px) translate(-50%,-50%);
+    transform:skewY(0deg);
+}
+
+.center h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-size: 90px;
+    color:rgb(255, 4, 4);
+    transform-style:preserve-3d;
+    transition:0.8s;
+}
+.center h1 span:nth-child(1){
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+
+
+.center h1 span:nth-child(2){
+    color:#000000;
+    transform:translate(-50%,-50%) skewX(-60deg);
+    left: -6px;
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+}
+
+.center h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewY(0deg);
+    left:-14px;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+.center:hover h1 span:nth-child(2), 
+.center:hover h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewX(0deg);
+    left:0;
+    color:rgb(255, 0, 0);
+}
+.bottom{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    left: 0;
+    top: 10vh;
+}
+.bottom > div{
+    height: 80vh;
+    width: 20vw;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.up{
+    background: url(https://previews.123rf.com/images/yuravector/yuravector1601/yuravector160100009/50124656-comic-book-black-and-white-radial-lines-background-rectangle-fight-stamp-for-card-manga-or-anime-speed-graphic-ink-texture-superhero-action-frame-explosion-vector-illustration-sun-ray-or-star-burst-element.jpg);
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+.image_1{
+    position: relative;
+    left: 4vw;
+    height: 40vh;
+    width: 15vw;
+}
+.image_2{
+    position: relative;
+    left: 3vw;
+    height: 40vh;
+    width: 15vw;
+}
+.image_3{
+    position: relative;
+    left: 3vw;
+    height: 40vh;
+    width: 15vw;
+}
+.image_4{
+    position: relative;
+    left: 4vw;
+    height: 40vh;
+    width: 15vw;
+}
+.text{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-caps: all-petite-caps;
+}
+.text_total{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-caps: all-petite-caps;
+}
